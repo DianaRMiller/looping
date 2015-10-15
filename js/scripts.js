@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     blanks.forEach(function(blank){
       var userInput = $("input#" + blank).val();
-      $("." + blank).text(userInput);
+      $("#favorites").append("<li>" + userInput + "</li>");
     });
 
     $("#favorites").show();
